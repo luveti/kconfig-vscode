@@ -1,0 +1,27 @@
+{
+	"name": "kconfig",
+	"displayName": "kconfig",
+	"description": "Provides syntax highlighting for the kbuild kconfig language. Used for linux kernel configuration (.config) and Buildroot configuration (.in).",
+	"version": "1.0.0",
+	"publisher": "luveti",
+	"repository": "https://github.com/luveti/kconfig-vscode",
+	"engines": {
+		"vscode": "^1.39.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "kconfig",
+			"aliases": ["kconfig", "kconfig"],
+			"extensions": [".config",".in"],
+			"configuration": "./language-configuration.json"
+		}],
+		"grammars": [{
+			"language": "kconfig",
+			"scopeName": "source.kconfig",
+			"path": "./syntaxes/kconfig.tmLanguage.json"
+		}]
+	}
+}

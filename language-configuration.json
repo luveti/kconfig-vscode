@@ -1,0 +1,12 @@
+{
+	"comments": {
+		"lineComment": "#",
+	},
+	"folding": {
+		"offSide": true,
+		"markers": {
+			"start": "^\\s*(if|menu)",
+			"end": "^\\s*(endif|endmenu)"
+		}
+	}
+}

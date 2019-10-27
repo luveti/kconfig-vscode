@@ -1,0 +1,58 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "kconfig",
+	"patterns": [
+		{ "include": "#comments" },
+		{ "include": "#constants" },
+		{ "include": "#help" },
+		{ "include": "#keywords" },
+		{ "include": "#strings" }
+	],
+	"repository": {
+		"comments": {
+			"patterns": [{
+				"name": "comment",
+				"match": "#.*$"
+			}]
+		},
+		"constants": {
+			"patterns": [{
+				"name": "constant.numeric",
+				"match": "\\b(m|M|n|N|y|Y)\\b"
+			}]
+		},
+		"help": {
+			"patterns": [{
+				"name": "constant.numeric",
+				"match": "^\\s+  .*$"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword",
+				"match": "\\b(comment|config|default|depends on|endif|endmenu|help|if|menu|prompt|select|source)\\b"
+			}, {
+				"name": "keyword",
+				"match": "\\b(bool|hex|int|string|tristate)\\b"
+			}, {
+				"name": "keyword",
+				"match": "\\B(\\|\\||&&)\\B"
+			}, {
+				"name": "keyword",
+				"match": "\\B(\\!)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.numeric",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.kconfig"
+}
