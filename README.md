@@ -1,6 +1,6 @@
 # kconfig syntax highlighting
 
-This extension provides syntax highlighting for the kbuild kconfig language. This is used for linux kernel and Buildroot configuration files (.config and .in respectively).
+This extension provides syntax highlighting for the kbuild kconfig language. This is used for linux kernel (.config) and Buildroot (.in and .in.host) configuration files.
 
 For more info on kconfig see: https://www.kernel.org/doc/Documentation/kbuild/kconfig-language.txt
 
