@@ -30,7 +30,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword",
-				"match": "\\b(comment|config|endif|endmenu|if|menu|source)\\b"
+				"match": "\\b(choice|comment|config|endchoice|endif|endmenu|if|mainmenu|menu|menuconfig|source)\\b"
 			}, {
 				"name": "keyword",
 				"match": "\\b(default|depends on|help|prompt|select)\\b"
