@@ -2,7 +2,7 @@
 	"name": "kconfig",
 	"displayName": "kconfig",
 	"description": "This extension provides syntax highlighting for the kbuild kconfig language. This is used for linux kernel (.config) and Buildroot (.in and .in.host) configuration files.",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"publisher": "luveti",
 	"repository": "https://github.com/luveti/kconfig-vscode",
 	"engines": {
@@ -15,7 +15,7 @@
 		"languages": [{
 			"id": "kconfig",
 			"aliases": ["kconfig", "kconfig"],
-			"extensions": [".config",".in",".in.host"],
+			"extensions": [".config",".in",".in.host","Kconfig","Kconfig.*"],
 			"configuration": "./language-configuration.json"
 		}],
 		"grammars": [{
