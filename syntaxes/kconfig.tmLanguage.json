@@ -33,7 +33,7 @@
 				"match": "\\b(choice|comment|config|endchoice|endif|endmenu|if|mainmenu|menu|menuconfig|source)\\b"
 			}, {
 				"name": "keyword",
-				"match": "\\b(default|depends on|help|prompt|select)\\b"
+				"match": "\\b(allnoconfig_y|defconfig_list|default|depends on|help|imply|modules|option|prompt|range|select|visible if)\\b"
 			}, {
 				"name": "keyword",
 				"match": "\\b(bool|def_bool|def_tristate|hex|int|string|tristate)\\b"
