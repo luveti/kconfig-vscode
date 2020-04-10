@@ -36,7 +36,7 @@
 				"match": "\\b(default|depends on|help|prompt|select)\\b"
 			}, {
 				"name": "keyword",
-				"match": "\\b(bool|hex|int|string|tristate)\\b"
+				"match": "\\b(bool|def_bool|def_tristate|hex|int|string|tristate)\\b"
 			}, {
 				"name": "keyword",
 				"match": "\\B(\\|\\||&&)\\B"
