@@ -5,8 +5,8 @@
 	"folding": {
 		"offSide": true,
 		"markers": {
-			"start": "^\\s*(if|menu)",
-			"end": "^\\s*(endif|endmenu)"
+			"start": "^\\s*(choice|if|menu)",
+			"end": "^\\s*(endchoice|endif|endmenu)"
 		}
 	}
 }

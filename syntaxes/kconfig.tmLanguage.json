@@ -30,10 +30,13 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword",
-				"match": "\\b(comment|config|default|depends on|endif|endmenu|help|if|menu|prompt|select|source)\\b"
+				"match": "\\b(choice|comment|config|endchoice|endif|endmenu|if|mainmenu|menu|menuconfig|source)\\b"
 			}, {
 				"name": "keyword",
-				"match": "\\b(bool|hex|int|string|tristate)\\b"
+				"match": "\\b(allnoconfig_y|defconfig_list|default|depends on|help|imply|modules|option|prompt|range|select|visible if)\\b"
+			}, {
+				"name": "keyword",
+				"match": "\\b(bool|def_bool|def_tristate|hex|int|string|tristate)\\b"
 			}, {
 				"name": "keyword",
 				"match": "\\B(\\|\\||&&)\\B"
